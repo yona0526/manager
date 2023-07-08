@@ -1,0 +1,200 @@
+body {
+  max-width: 520px;
+}
+
+header {
+  background-color: #574c40;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-sizing: border-box;
+  max-width: 100%s;
+}
+
+.btn_menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.btn_menu span:last-child {
+  margin-bottom: 0
+}
+
+.menu {
+  position: Absolute;
+  background: #C2A788;
+  width: 55%;
+  height: calc( 100% - 60px );
+  z-index: 7890;
+  top: 60px;
+  left: 0;
+}
+.menu a {color:#fefdfe}
+.menu .btn_close {background:#d1c6ba; width: 50px;height:50px;position:absolute;right:0}
+.menu .btn_close span {font-size:35px}
+.menu .user_info {
+  background-color: #947a5d;color:#fff;
+  padding:25px 15px ; display: flex;align-items: center; justify-content: space-between;
+}
+.menu .user_info #btn_logout {font-size:13px; padding:10px; border:2px solid #fefdfe; border-radius: 25px;}
+.gnb li {
+  border-bottom: 1px solid #fefdfe;
+  padding: 10px
+}
+
+.gnb a {
+  color: #fefdfe;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.menu .company_info {position: absolute; bottom:0; padding:20px 15px 50px; background-color: #574c40; color:#fafafa;}
+.menu .company_info .cs_no {font-size:16px; margin-bottom:13px}
+.menu .company_info .material-symbols-rounded {vertical-align: sub;}
+.menu .company_info .cs_no a {font-size:25px; display: block;padding-top:7px;font-weight: 600; color:gold;}
+.menu .company_info .co_name {font-size:22px; font-weight: 500; margin-bottom:10px;}
+.company_info address {line-height:22px; color:#dedede}
+h1 {
+  font-weight: bolder;
+  font-size: 23px;
+  color: #fff
+}
+
+h1 img {
+  height: 25px
+}
+
+header .btn_home {
+  color: #fff
+}
+
+header .btn_home .material-symbols-rounded {
+  font-size: 30px
+}
+
+.contents_wrap {
+  max-width:100%;
+  padding: 2%;
+  box-sizing: border-box !important;
+
+}
+.contents_wrap div {box-sizing: border-box;}
+section {padding-top: 10px; border-top:1px solid #090909;}
+h2 {
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 22px
+}
+.table-today table {
+  width:100%; border:1px solid #dedede
+}
+.table-today table th, .table-today table td {padding:10px; border:1px solid #dedede}
+.table-today .btn_area {margin-top:10px;gap:10px}
+.table-today .btn_area .btn_half {background-color: #c1dbd0; border:1px solid #aaa; }
+.table-today .today-1row {display: flex; align-items: center; justify-content: space-between;}
+.table-today .today-no {display: flex; align-items: center; color:#FF3406; font-weight: 600;}
+.table-today .today-no .material-symbols-rounded {margin-top:3px; color:#090909}
+
+.calendar table {
+  width: 100%; margin-top:10px
+}
+
+.calendar table th,
+.calendar table td {
+  padding: 7px 5px;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+}
+
+.calendar table th {
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.calendar table td {
+  position: relative;
+  height: 6.5vh;
+}
+
+.calendar table .cal_status {
+  width: 100%;
+  margin-top: 1vh;
+  color: #fff;
+  border-radius: 4px;
+  font-size:13px; padding:3px 0; text-align: center;
+}
+.status-all {
+  background: #3e3e3e;
+}
+.status-part {
+  background:#44a3f5
+}
+.room_list_wrap {border-top:0}
+.room_list_wrap .date {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+  font-size:17px;
+}
+.status-ex div {width:15px; height:15px; margin-right:5px}
+.status-ex .status-part {margin-left:30px}
+.status-ex {display: flex;align-items: center;}
+
+.room_list_wrap .date h3 {
+  font-weight: bold;
+}
+.room_list_wrap .date button {color:#fff}
+.room_list_wrap .room_list li {
+  border: 1px solid #dedede
+}
+
+
+.room_list_wrap .room_list li .room_name {
+  background-color:#c1dbd0;
+  padding:15px
+}
+
+.room_list_wrap .room_list li .room_name span {
+  padding: 3px 5px;
+  font-size: 2.5vw;
+  border-radius: 6px;
+  color: #fff; margin-right:10px
+}
+
+.title_month {display: flex;justify-content: space-between;}
+.title_month .material-symbols-rounded {font-size:15px; vertical-align: middle;}
+.title_month {font-weight: bold;}
+
+.room_list .rm_stat {text-align: center; padding:15px;font-weight: 600;color:#666; font-size:15px;}
+.room_list .btn_area {padding:10px}
+.room_list .btn_area button { color:#fefdfd;}
+
+
+.booking_list .date_range {padding:10px; display: flex;align-items: center; margin:10px 0; justify-content: space-between;}
+.booking_list .date_range .material-symbols-rounded {margin-right:5px}
+.booking_list .date_range input[type='date'] {
+  width:42%; border: 1px solid #dedede; padding:7px
+}
+
+
+.search_filter {display: flex; border:1px solid #eee; margin-top:15px; padding:10px; justify-content: space-between;}
+.filter { display: flex; align-items: center; width:30%; height:30px; border:none}
+.search_text {padding:10px; box-sizing: border-box;}
+.search_text input, .search_text button {height:35px; margin-top:10px}
+.search_text input {border:1px solid #aaa}
+.search_text button {background-color:#947a5d; color:#fff;}
+.book_history h2 span {color:#FF3406}
+
+.book_history .room_name {padding:0 5px 15px 0; font-size:18px; font-weight: 700; color:#947a5d;}
+.book_history li {border-bottom:1px solid #dedede; padding:15px; }
+.book_history li:first-child {border-top:1px solid #dedede}
+.book_history li dl {display:flex;justify-content: space-between; padding:5px; box-sizing: border-box; font-size:16px;}
+.book_history li dl dt {font-weight: 600;}

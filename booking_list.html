@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>어디갈래 파트너센터</title>
+  <link rel="stylesheet" type="text/css" href="/common/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/basic.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/layout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/common/js/common.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="btn_menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <h1>
+      <img src="http://img.gmidas.com/julgigobaseimg/vip/images/logo_gowhere.png" alt="어디갈래 로고" /> PMS
+    </h1>
+    <a href="#" class="btn_home">
+      <span class="material-symbols-rounded">home</span>
+    </a>
+  </header>
+  <div class="contents_wrap">
+    <div class="menu">
+      
+      <!-- <button class="btn_close">
+        <span class="material-symbols-rounded">
+          close
+          </span>
+      </button> -->
+      
+      <div class="user_info">
+        어디갈래 펜션
+        <a href="#" id="btn_logout"><span class="material-symbols-rounded">
+          logout
+          </span></a>
+      </div>
+      <ul class="gnb">
+        <li><a href="#">오늘 예약신청</a></li>
+        <li><a href="#">오늘 입실건수</a></li>
+        <li><a href="#">오늘 매출</a></li>
+        <!-- <li><a href="#">정산관리</a></li> -->
+        <li><a href="#">방막기/풀기</a></li>
+        <li><a href="#">예약조회</a></li>
+      </ul>
+      <div class="company_info">
+        <div class="cs_no">
+          <span class="material-symbols-rounded">support_agent</span> 
+          고객센터 
+            <a href="tel:+8216005883">1600 5883</a> 
+          </div>
+        <div class="co_name">주)어디갈래</div>
+        <address><span class="material-symbols-rounded">
+          location_on
+          </span> 서울시 금천구 가산디지털1로
+          168 B동 912호</address>
+      </div>
+    </div>
+
+<!-- 예약 조회-->
+<h2>예약 조회</h2>
+<section class="booking_list">
+<div class="booking_date-search">
+  <div>기준
+    <input type="radio" name="book_date" id="date-reg">
+    <label for="date-reg">신청일</label> 
+    <input type="radio" name="book_date" id="date-stay">
+    <label for="date-stay">숙박일</label>
+  </div>
+  <div class="date_range">
+    <input type="date" id="from" /> ~ 
+    <!-- <span class="material-symbols-rounded">
+      calendar_month
+      </span> 2023.1.27 ~ 2023.2.27 -->
+      <input type="date" id="to" />
+  </div>
+
+  <div class="">
+    <button class="btn_mini">오늘</button>
+    <button class="btn_mini">최근 일주일</button>
+    <button class="btn_mini">최근 한달</button>
+  </div>
+</div>
+
+<div class="search_filter">
+  <select class="filter">
+    <option>결제구분</option>
+    <span class="material-symbols-rounded">keyboard_arrow_down</span>
+
+  </select>
+  <select class="filter">
+    <option>예약상태</option>
+    <span class="material-symbols-rounded">keyboard_arrow_down</span>
+  </select>
+  <select class="filter">
+    <option>숙박상태</option>
+    <span class="material-symbols-rounded">keyboard_arrow_down</span>
+  </select>
+
+</div>
+
+<div class="search_text">
+  <input class="w100" type="text" placeholder="예약자명, 예약번호, 핸드폰"/>
+  <button class="w100">조회</button>
+</div>
+
+</section>
+
+
+<section class="book_history">
+  <h2>예약 <span>3</span>건</h2>
+  <div>
+    <ul>
+      <li>
+        <div class="room_name">방이름</div>
+        <dl>
+          <dt>이용일</dt>
+          <dd>2023.02.22 ~ 2023.02.23</dd>
+        </dl>
+        <dl>
+          <dt>신청일</dt>
+          <dd>2023.02.15</dd>
+        </dl>
+        <dl>
+          <dt>예약상태</dt>
+          <dd>결제완료</dd>
+        </dl>
+        <dl>
+          <dt>숙박상태</dt>
+          <dd>숙박완료</dd>
+        </dl>
+      </li>
+
+      <li>
+        <div class="room_name">방이름</div>
+        <dl>
+          <dt>이용일</dt>
+          <dd>2023.02.22 ~ 2023.02.23</dd>
+        </dl>
+        <dl>
+          <dt>신청일</dt>
+          <dd>2023.02.15</dd>
+        </dl>
+        <dl>
+          <dt>예약상태</dt>
+          <dd>결제완료</dd>
+        </dl>
+        <dl>
+          <dt>숙박상태</dt>
+          <dd>숙박완료</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+  </body> 
+</html>

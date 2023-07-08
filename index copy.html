@@ -1,0 +1,276 @@
+	<? include "common/inc/head.lib.php"; ?>
+  
+  
+  <div class="contents_wrap">
+    <div class="menu">
+      
+      <!-- <button class="btn_close">
+        <span class="material-symbols-rounded">
+          close
+          </span>
+      </button> -->
+      
+      <div class="user_info">
+        어디갈래 펜션
+        <a href="#" id="btn_logout"><span class="material-symbols-rounded">
+          logout
+          </span></a>
+      </div>
+      <ul class="gnb">
+        <li><a href="#">오늘 예약신청</a></li>
+        <li><a href="#">오늘 입실건수</a></li>
+        <li><a href="#">오늘 매출</a></li>
+        <!-- <li><a href="#">정산관리</a></li> -->
+        <li><a href="#">방막기/풀기</a></li>
+        <li><a href="#">예약조회</a></li>
+      </ul>
+      <div class="company_info">
+        <div class="cs_no">
+          <span class="material-symbols-rounded">support_agent</span> 
+          고객센터 
+            <a href="tel:+8216005883">1600 5883</a> 
+          </div>
+        <div class="co_name">주)어디갈래</div>
+        <address><span class="material-symbols-rounded">
+          location_on
+          </span> 서울시 금천구 가산디지털1로
+          168 B동 912호</address>
+      </div>
+    </div>
+
+<!-- 예약 건수-->
+<h2>오늘의 예약현황</h2>
+<section class="table-today">
+  <table>
+    <tr>
+      <td rowspan="3" class="today-3row">
+        오늘 예약 신청 
+        <div class="today-no">6 
+          <span class="material-symbols-rounded">
+            chevron_right
+            </span>
+        </div>
+      </td>
+      <td class="today-1row">오늘 입실 건수 
+        <div class="today-no">6 
+          <span class="material-symbols-rounded">
+            chevron_right
+            </span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="today-1row">
+        오늘 매출 
+        <div class="today-no">6 
+          <span class="material-symbols-rounded">
+            chevron_right
+            </span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="today-1row">
+        정산 관리 
+        <div class="today-no">6 
+          <span class="material-symbols-rounded">
+            chevron_right
+            </span>
+        </div>
+      </td>
+    </tr>
+    
+  </table>
+  <div class="btn_area">
+    <buton class="btn_half">방막기/풀기</buton>
+    <buton class="btn_half">예약조회</buton>
+  </div>
+
+</section>
+
+
+
+<!-- 예약현황 달력-->
+    <h2>예약현황 달력</h2>
+    <section class="calendar">
+      <div class="title_month">
+        <button class="btn_mini">이번달</button>
+        2023년 2월
+        <div>
+          <button>
+            <span class="material-symbols-rounded">arrow_back_ios</span>
+          </button>
+          <button>
+            <span class="material-symbols-rounded">arrow_forward_ios</span>
+          </button>
+        </div>
+      </div>
+      <table class="book_calendar">
+        <tr>
+          <th class="red">일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th class="blue">토</th>
+        </tr>
+        <tr>
+          <td class="red">1
+            <div class="cal_status status-all">전체</div>
+          </td>
+          <td>2
+            <div class="cal_status status-part">일부</div>
+          </td>
+          <td>3
+            <div class="cal_status status-part">일부</div>
+          </td>
+          <td>4
+            <div class="cal_status status-part">일부</div>
+          </td>
+          <td>5
+            <div class="cal_status status-part">일부</div>
+          </td>
+          <td>6
+            <div class="cal_status status-all">전체</div>
+          </td>
+          <td class="blue">7
+            <div class="cal_status status-all">전체</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="red">1
+            
+          </td>
+          <td>2
+            <div class="cal_status status-all">전체</div>
+          </td>
+          <td>3
+       
+          </td>
+          <td>4
+ 
+          </td>
+          <td>5
+            <div class="cal_status status-part">일부</div>
+          </td>
+          <td>6
+    
+          </td>
+          <td class="blue">7
+    
+          </td>
+        </tr>
+        <tr>
+          <td class="red">1
+
+          </td>
+          <td>2
+
+          </td>
+          <td>3
+
+          </td>
+          <td>4
+
+          </td>
+          <td>5
+
+          </td>
+          <td>6
+
+          </td>
+          <td class="blue">7
+
+          </td>
+        </tr>
+        <tr>
+          <td class="red">1
+
+          </td>
+          <td>2
+
+          </td>
+          <td>3
+
+          </td>
+          <td>4
+
+          </td>
+          <td>5
+
+          </td>
+          <td>6
+          </td>
+          <td class="blue">7
+          </td>
+        </tr>
+        <tr>
+          <td class="red">1
+          </td>
+          <td>2
+          </td>
+          <td>3
+          </td>
+          <td>4
+          </td>
+          <td>5
+          </td>
+          <td>6
+          </td>
+          <td class="blue">7
+          </td>
+        </tr>
+        <tr>
+          <td colspan="7">
+            <div class="status-ex">
+              <div class="status-all"></div>객실 전체 예약완료
+              <div class="status-part"></div>객실 일부 예약완료
+            </div>
+          </td>
+        </tr>
+       
+      </table>
+      
+    </section>
+    <section class="room_list_wrap">
+      <div class="date">
+        <h3>2023.02.17</h3>
+        <div class="btn_area">
+          <button class="btn_mini bg_blue">모두 방막기</button>
+          <button class="btn_mini bg_red">모두 방풀기</button>
+        </div>
+      </div>
+      
+      <div class="room_list">
+        <ul>
+          <li>
+            <div class="room_name">
+              <span class="status-all">예약완료</span>
+              객실명
+            </div>
+            <!--예약가능할때-->
+            <div class="room_name">
+              <span class="status-part">예약가능</span>
+              객실명
+            </div>
+            <div class="rm_stat rm_stat-full">
+              이 객실은 방막기 중입니다.
+            </div>
+             <!--예약가능할때-->
+            <div class="rm_stat rm_stat-empty">
+              1박부터 예약가능, 실시간예약
+            </div>
+            <div class="btn_area">
+              <button class="btn_half bg_blue">방막기</button>
+              <button class="btn_half bg_red">방풀기</button>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+
+  </section>
+  </body> 
+</html>
